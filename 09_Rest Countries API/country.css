@@ -1,0 +1,153 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Nunito,sans-serif;
+    margin: 0;
+    --background-color: white;
+    --text-color: black;
+    --elements-color: white;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+body.dark{
+    --background-color: hsl(207, 26%, 17%); 
+    --text-color: white;
+    --elements-color: hsl(209, 23%, 22%);
+}
+
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: auto;
+    height: 50px;
+    align-items: center;
+    font-size: 15px;
+}
+
+.header-container{
+    padding-inline: 20px;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.1);
+    height: 50px;
+    background-color: var(--elements-color);
+}
+
+.h2-header{
+    font-weight: bolder;
+}
+
+.header-container p{
+    cursor: pointer;
+}
+
+.button{
+    cursor: pointer;
+    box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.1);
+    background-color: transparent;
+    border: none;
+    border-radius: 5px;
+    font-size: 12px;
+    padding: 7px 20px;
+    color: grey;
+    background-color: var(--elements-color);
+}
+
+.main{
+    margin: 40px 0px 40px 80px;
+}
+
+.container{
+    height: 300px;
+    /* width: 80vw; */
+    margin: 50px 0;
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+}
+
+.image{
+    height: 100%;
+    margin-right: 100px;
+    width: 50vw;
+}
+
+.box{
+    width: 100%;
+}
+
+.country-info{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex-wrap: wrap;
+    max-height: 150px;
+}
+
+.country-info p{
+    margin: 0;
+    
+}
+
+.border-countries{
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.border-countries span{
+    font-weight: 650;
+    
+}
+
+.border-countries a{
+    background-color: transparent;
+    border-radius: 5px;
+    padding-inline: 15px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+    box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.1);
+    background-color: var(--elements-color);
+    color: var(--text-color);
+    margin-inline: 5px;
+}
+
+@media (max-width: 1030px){
+    .main{
+        margin: 40px 0px 40px 20px;
+    }
+    .image{
+        margin-right: 50px;
+    }   
+}
+
+@media (max-width: 850px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .box{
+        width: fit-content;
+    }
+    .country-info{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        max-height: unset;
+        /* flex-wrap: wrap; */
+        /* max-height: 150px; */
+    }
+    .image{
+        margin-right: 30px;
+        width: 100%;
+    }
+    .h2-header{
+        font-size: 16px;
+    }
+    
+}

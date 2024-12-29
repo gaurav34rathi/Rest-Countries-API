@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>country</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito:200,300,regular,500,600,700,800,900"
+      rel="stylesheet"
+    />
+    <script src="country.js" defer></script>
+    <link rel="stylesheet" href="country.css" />
+  </head>
+  <body class="">
+    <header class="header-container">
+      <nav class="nav-bar">
+        <h2 class="h2-header">Where in the world?</h2>
+        <p class="theme-changer"><i class="fa-regular fa-moon"></i>&nbsp;&nbsp; <span class="dark-light">Dark Mode</span></p>
+      </nav>
+    </header>
+
+    <!-- <div class="search-bar">
+      <input type="text">gfghf
+    </div> -->
+
+    <main class="main">
+      <button class="button" onclick="history.back()">
+        <i class="fa-solid fa-arrow-left-long"></i>&nbsp;&nbsp; Back
+      </button>
+      <div class="container">
+        <img src="" class="image" alt="flag" />
+        <div class="box">
+          <h2 class="h2"></h2>
+          <div class="country-info">
+            <p><b>Native Name: </b><span class="native-name"></span></p>
+            <p><b>Population: </b><span class="population"></span></p>
+            <p><b>Region: </b><span class="region"></span></p>
+            <p><b>Sub Region: </b><span class="sub-region"></span></p>
+            <p><b>Capital: </b><span class="capital"></span></p>
+            <p><b>Top Level Domain: </b><span class="top-level-domain"></span></p>
+            <p><b>Currencies: </b><span class="currencies"></span></p>
+            <p><b>Languages: </b><span class="languages"></span></p>
+          </div>
+
+          <div class="border-countries">
+            <span>Border Countries: </span>
+            
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
